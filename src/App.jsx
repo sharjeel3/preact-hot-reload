@@ -2,7 +2,8 @@ import { h, render } from 'preact'
 import About from './components/About'
 import Home from './components/Home'
 import Router from 'preact-router'
-import { Link } from 'preact-router/match';
+import { Link } from 'preact-router/match'
+import AsyncRoute from 'preact-async-route';
 
 const App = () => (
     <div>
@@ -15,6 +16,9 @@ const App = () => (
                     <Link href="/about">About</Link>
                 </div>
                 <div>
+                    <Link href="/game">Game</Link>
+                </div>
+                <div>
                     <Link href="/">Home</Link>
                 </div>
             </div>
@@ -22,6 +26,12 @@ const App = () => (
                 <h3>Content appears here: </h3>
                 <Router>
                     <About path="/about"/>
+
+                    <AsyncRoute
+                        path="/game"
+                        getComponent={ () => import('./components/Game').then(module => module.default) }
+                    />
+
                     <Home path="/"/>
                 </Router>
             </div>

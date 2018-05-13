@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "preact": "^8.2.9",
+    "preact-async-route": "^2.1.1",
     "preact-compat": "^3.18.0",
     "preact-router": "^2.6.0"
   }
