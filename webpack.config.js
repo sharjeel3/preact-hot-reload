@@ -7,10 +7,20 @@ const config = {
         filename: "bundle.js",
         path: path.resolve(__dirname, "dist")
     },
+    devServer: {
+        contentBase: path.resolve(__dirname)
+    },
+    resolve: {
+        extensions: ['.js', '.jsx'],
+        alias: {
+            'react': 'preact-compat',
+            'react-dom': 'preact-compat'
+        }
+    },
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader"
