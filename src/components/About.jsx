@@ -2,7 +2,7 @@ import { h, render } from 'preact'
 
 const About = () => (
     <div>
-        <h3>About Preact App.</h3>
+        <h3>About Preact App about.</h3>
     </div>
 )
 

@@ -2,7 +2,7 @@ import { h, render } from 'preact'
 
 const Game = () => (
     <div>
-        <h3>Some random game content</h3>
+        <h3>Some random game content.</h3>
     </div>
 )
 

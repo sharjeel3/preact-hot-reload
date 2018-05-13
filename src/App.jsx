@@ -29,7 +29,7 @@ const App = () => (
 
                     <AsyncRoute
                         path="/game"
-                        getComponent={ () => import('./components/Game').then(module => module.default) }
+                        getComponent={ () => import('./containers/Game').then(module => module.default) }
                     />
 
                     <Home path="/"/>

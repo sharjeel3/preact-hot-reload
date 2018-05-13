@@ -33,6 +33,10 @@
     "preact": "^8.2.9",
     "preact-async-route": "^2.1.1",
     "preact-compat": "^3.18.0",
-    "preact-router": "^2.6.0"
+    "preact-redux": "^2.0.3",
+    "preact-router": "^2.6.0",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
   }
 }
